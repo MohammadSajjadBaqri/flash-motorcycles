@@ -1,0 +1,105 @@
+body{
+	background-color: #f07967;
+}
+
+.container{
+	width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.header-and-nav{
+	padding-top: 2%;
+	padding-bottom: 2%;
+
+	display: flex;
+}
+
+header{
+
+	flex: 1;
+}
+
+header img{
+	width: 100%;
+}
+
+nav{
+
+	flex: 8;
+	display: flex;
+	justify-content: right;
+}
+
+.nav1{
+	align-self: center;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+.nav2{
+	align-self: center;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+.nav3{
+	align-self: center;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+main{
+e;
+	display: flex;
+	align-content: center;
+	vertical-align: middle;
+}
+
+.head1{
+	margin-top: auto;
+	margin-bottom: auto;
+	flex: 2;
+}
+
+.head2{
+	flex: 1;
+}
+
+.head2 img{
+	width: 100%;
+}
+
+.cards{
+	display: flex;
+	justify-content: space-between;
+	height: 250px;
+	width: 100%;
+}
+
+.card1{
+	margin-left: 2% ;
+	margin-right: 2%;
+	flex: 1;
+	background-color: lightpink;
+	height: 100%;
+	width: 25%;
+}
+
+.card2{
+	margin-left: 2% ;
+	margin-right: 2%;
+	width: 25%;
+	height: 100%;
+	flex: 1;
+	background-color: pink;
+}
+
+.card3{
+	margin-left: 2% ;
+	margin-right: %;
+	width: 25%;
+	height: 100%;
+	flex: 1;
+	background-color: darkviolet;
+}
