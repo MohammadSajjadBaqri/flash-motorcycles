@@ -19,8 +19,8 @@ body{
 .header-and-nav{
 	padding-top: 2%;
 	padding-bottom: 2%;
-
 	display: flex;
+	border-bottom: 0.1rem lightgray solid;
 }
 
 header{
@@ -37,25 +37,23 @@ nav{
 	flex: 8;
 	display: flex;
 	justify-content: right;
+	align-content: center;
 }
 
-.nav1{
+.nav-button{
 	align-self: center;
-	padding-left: 2%;
-	padding-right: 2%;
+	margin: 0.2rem;
+	background-color: transparent;
+	border: solid 0.1rem white;
+	color: white;
+	font-family: raleway, sans-serif;
+	padding: 0.5rem 1rem;
+	display: inline-block;
+	border-radius: 0.1rem;
+	height: fit-content;
+	width: fit-content;
 }
 
-.nav2{
-	align-self: center;
-	padding-left: 1%;
-	padding-right: 1%;
-}
-
-.nav3{
-	align-self: center;
-	padding-left: 1%;
-	padding-right: 1%;
-}
 
 main{
 	display: flex;
@@ -82,6 +80,26 @@ main{
 	line-height: 1.5rem;
 	padding-right: 100px;
 }
+
+.button{
+	background-color: white;
+	border: none;
+	color: #EA725E;
+	font-family: raleway, sans-serif;
+	padding: 0.5rem 1rem;
+	display: inline-block;
+	font-weight: bolder;
+	border-radius: 0.1rem;
+	margin-top: 0.5rem;
+	height: fit-content;
+	width: fit-content;
+}
+
+.button:active{
+	border: none;
+	border-color: white;
+}
+
 .head2{
 	flex: 1;
 }
@@ -146,7 +164,7 @@ main{
 
 i{
 	font-size: 6rem;
-	margin: 2rem 1rem;
+	margin: 2rem 0rem;
 }
 
 h2{
@@ -165,4 +183,33 @@ h2{
 
 .cards p{
 	font-weight: bold;
+}
+
+.reviews{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 3rem;
+}
+
+.review-box{
+	width: 47%;
+	padding: 1.5rem;
+	box-sizing: border-box;
+	border: white solid 1px;
+	margin-top: 1.92rem;
+	margin-bottom: 1.92rem;
+	font-family: raleway, sans-serif;
+	font-size: 1.25rem;
+	line-height: 1.5rem;
+}
+
+.review-box p:last-of-type{
+	padding: 0rem;
+	margin: 0rem;
+	font-family: raleway, sans-serif;
+	margin-top: 1rem;
+	margin-right: 2rem;
+	text-align: right;
+	font-size: 0.85rem;
 }
