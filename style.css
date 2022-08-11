@@ -1,12 +1,15 @@
 html{
 	height:  fit-content;
 	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: linear-gradient(#EA725E, #E96974);
 }
 
 body{
 	background-repeat: no-repeat;
-	background-size: cover;
-	background-image: linear-gradient(#EA725E, #E96974);
+	background-position: center center;
+	background-image: url(img/logo-shadow.png);
 	color: white;
 }
 
@@ -52,6 +55,46 @@ nav{
 	border-radius: 0.1rem;
 	height: fit-content;
 	width: fit-content;
+	text-align: center;
+	box-sizing: border-box;
+	width: 8rem;
+}
+
+.nav-button a{
+	color: white;
+	text-decoration: none;
+}
+
+.dropdown{
+	display: none;
+	position: absolute;
+	margin-left: -1.15rem;
+	padding-top: 1rem;
+}
+
+.nav-button:hover .dropdown{
+	display: block;
+}
+
+.item{
+	background-color: white;
+	margin: 1px;
+	border-radius: 3px;
+	box-sizing: border-box;
+	padding: 8px 10px;
+	width: 8rem;
+	text-align: center;
+	color: #EA725E;
+	font-weight: bold;
+}
+
+.item:hover{
+	background-color: transparent;
+	color: white;
+	border: solid 0.1rem white;
+	transition: 1s;
+	margin: 2px;
+	font-weight: normal;
 }
 
 
@@ -62,19 +105,24 @@ main{
 	margin-top: 3rem;
 }
 
+.main-contact-us{
+	vertical-align: middle;
+	margin-top: 3rem;
+}
+
 .head1{
 	margin-top: auto;
 	margin-bottom: auto;
 	flex: 2;
 }
 
-.head1 h1{
+.head1 h1, .main-contact-us h1{
 	font-family: 'Anton', sans-serif;
 	font-size: 4rem;
 	margin-bottom: 0.5rem;
 }
 
-.head1 p{
+.head1 p, .main-contact-us p{
 	font-family: 'Raleway', sans-serif;
 	font-size: 1rem;
 	line-height: 1.5rem;
@@ -212,4 +260,92 @@ h2{
 	margin-right: 2rem;
 	text-align: right;
 	font-size: 0.85rem;
+}
+
+.inputs{
+	margin-top: 0.4rem;
+	margin-bottom: 0.4rem;
+	font-family: raleway, sans-serif;
+	font-size: 1rem;
+	display: flex;
+}
+
+.inputs p{
+	margin-top: 0.2rem;
+}
+
+form{
+	margin-top: 2rem;
+}
+
+input, select{
+	font-family: raleway, comic-sans, sans-serif;
+	font-size: 1rem;
+	padding: 0.5rem 01rem;
+	box-sizing: border-box;
+	font-weight: bold;
+	color: #E06C5F;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"], select{
+	flex: 7;
+	border-radius: 0.6rem;
+	border: none;
+	box-shadow: none;
+}
+
+textarea{
+	width: 100%;
+	font-family: raleway, comic-sans, sans-serif;
+	font-size: 1rem;
+	padding: 0.5rem 01rem;
+	box-sizing: border-box;
+	font-weight: bold;
+	color: #E06C5F;
+	margin-top: 2rem;
+	border-radius: 0.6rem;
+	border: none;
+	box-shadow: none;
+}
+
+label[for="name"], label[for="email"], label[for="tel"], label[for="date"], label[for="country"]{
+	flex: 1;
+	margin-top: 0.8rem;
+}
+
+.item1 .inputs{
+	display: inline-block;
+}
+
+.item2 .inputs{
+	display: inline-block;
+	line-height: 1rem;
+}
+
+.item1{
+	margin-top: 1rem;
+}
+
+input[type="submit"]{
+	background-color: white;
+	font-family: raleway, comic-sans, sans-serif;
+	font-size: 1rem;
+	padding: 0.8rem 1.6rem;
+	font-weight: bold;
+	box-sizing: border-box;
+	color: #E06C5F;
+	margin-top: 1rem;
+	border: none;
+	border-radius: 0.4rem;
+}
+
+input[type="submit"]:hover{
+	background-color: transparent;
+	color: white;
+	border: 1px solid white;
+	transition: 1s;
+}
+
+select option{
+	font-weight: bolder;
 }
