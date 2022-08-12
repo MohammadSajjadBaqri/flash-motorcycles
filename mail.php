@@ -15,7 +15,7 @@ if(isset($_POST['submit'])){
     $message2 = "Here is a copy of your message " . $name . "\n\n" . $_POST['message'];
 
     $headers = "From:" . $from;
-    $headers2 = "From:" . $to;
+    $headers2 = "From:" . $to; }
 
      if (mail($to, $subject, $message, $headers)) {
         echo "Thank you. Your review has been sent to Flash Motorcycles. They will respond shortly.";
@@ -23,15 +23,4 @@ if(isset($_POST['submit'])){
     else {
         echo "Error! Your review could not be sent to Flash Motorcycles due to some technical errors!";
     }
-
-
-
-   if (mail($from, $subject2, $message2, $headers2)) {
-        echo "A copy of your mail has been sent for you.";
-    }
-     else {
-       echo "We failed to send the copy of your review to yourself. Sorry!";
-    }
-     You can also use header('Location: thank_you.php'); to redirect to another page.
-     }
 ?>
