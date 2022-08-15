@@ -24,20 +24,4 @@ if (issset($_POST['submit'])) {
         echo '<a href="/"> Back to home </a>';
     }
 
-    $subject2 = 'A copy of your form sent to Flash Motocycles.';
-    $message2 = 'Here is a copy of your message you sent to Flash Motorcycles.' . '\r\n' . $message;
-    $headers2 = 'From: Flash Motorcycles Official Website': 
-
-    if (mail($from, $subject2, $message2, $headers2)) {
-        echo 'We have also mailed you the form you submitted to us.' . '\r\n';
-        echo '<a href="/"> Back to home </a>';
-    }
-
-    else {
-        echo "We didn't send you the copy of your form you sent to Flash Motorcycles." . '\r\n';
-        echo '<a href="/"> Back to home </a>';
-    }
-
-
-
 }
