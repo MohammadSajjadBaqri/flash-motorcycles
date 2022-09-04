@@ -1,6 +1,6 @@
 <?php
 
-if (issset($_POST['submit'])) {
+if (isset($_POST['submit'])) {
     $name = $_POST['name'];
     $email = $_POST['email'];
     $number = $_POST['tel'];
@@ -23,5 +23,9 @@ if (issset($_POST['submit'])) {
         echo 'Warning: An error occured while sharing your message to the team members of Flash. Our developers are fixing the issue. Contact us again a few minutes later.' . '\r\n';
         echo '<a href="/"> Back to home </a>';
     }
+
+    $subject2 = 'A copy of your form sent to Flash Motocycles.';
+    $message2 = 'Here is a copy of your message you sent to Flash Motorcycles.' . '\r\n' . $message;
+    $headers2 = 'From: Flash Motorcycles Official Website';
 
 }
